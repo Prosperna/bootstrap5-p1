@@ -33,26 +33,15 @@ Once the plugin is installed and added to your GrapesJS project, you can start u
 
 ## Components
 
-### Blocks
-
-Here's a list of all the custom blocks included in the Bootstrap5-p1 plugin:
-Row
-The Row block creates a Bootstrap row that can contain one or more Column blocks. The row can be customized with additional classes and styles.
-
-Column1-p1
-The Column1-p1 block creates a single-column layout that can be customized with additional classes and styles.
-
-Column2-p1
-The Column2-p1 block creates a two-column layout with equal width that can be customized with additional classes and styles.
-
-Column3-p1
-The Column3-p1 block creates a three-column layout with equal width that can be customized with additional classes and styles.
-
-Column4-p1
-The Column4-p1 block creates a four-column layout with equal width that can be customized with additional classes and styles.
-
-Column5-p1
-The Column5-p1 block creates a five-column layout with equal width that can be customized with additional classes and styles.
+| Block      | Description                                                                                                                       |
+| ---------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| Row        | Creates a Bootstrap row that can contain one or more Column blocks. The row can be customized with additional classes and styles. |
+| Column1-p1 | Creates a single-column layout that can be customized with additional classes and styles. The column content is a Markdown table. |
+| Column2-p1 | Creates a two-column layout with equal width that can be customized with additional classes and styles.                           |
+| Column3-p1 | Creates a three-column layout with equal width that can be customized with additional classes and styles.                         |
+| Column4-p1 | Creates a four-column layout with equal width that can be customized with additional classes and styles.                          |
+| Column5-p1 | Creates a five-column layout with equal width that can be customized with additional classes and styles.                          |
+| Column6-p1 | Creates a six-column layout with equal width that can be customized with additional classes and styles.                           |
 
 ## Customization
 
