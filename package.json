@@ -13,7 +13,9 @@
   },
   "keywords": [
     "grapesjs",
-    "plugin"
+    "plugin",
+    "Bootstrap",
+    "grapesjs plugin",
   ],
   "author": "Ruel Nopal",
   "license": "ISC",
