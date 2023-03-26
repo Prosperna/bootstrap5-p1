@@ -49,4 +49,4 @@ You can customize the appearance of the Bootstrap5-p1 blocks by modifying the CS
 
 ## License
 
-Bootstrap5-p1 is licensed under the MIT license. See the LICENSE file for more information.
+Bootstrap5-p1 is licensed under the ISC license. See the LICENSE file for more information.
