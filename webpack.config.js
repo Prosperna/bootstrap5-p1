@@ -1,17 +1,28 @@
 const path = require("path");
+const webpack = require("webpack");
 
 module.exports = {
-  entry: "./src/css/index.js",
+  entry: "./src/index.js",
   output: {
-    filename: "style.css",
+    filename: "index.js",
     path: path.resolve(__dirname, "dist"),
+    libraryTarget: "umd",
   },
   module: {
     rules: [
       {
-        test: /\.scss$/,
-        use: ["style-loader", "css-loader", "sass-loader"],
+        test: /\.js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
       },
     ],
   },
+  plugins: [
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
+    }),
+  ],
 };
