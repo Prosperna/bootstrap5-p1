@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.8 - YYYY-MM-DD
+
+### Changed
+
+- Added New Contributors to package.json
+
 ## 1.0.7 - 2023-04-20
 
 ### Updated
