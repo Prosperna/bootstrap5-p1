@@ -1,6 +1,14 @@
 import blocks from "./src/blocks";
 
-export default (editor, opts = {}) => {
+/**
+ * @param {Editor} editor
+ * @param {Object} opts
+ * @param {Array} opts.blocks - Array of blocks to add
+ * @param {Boolean} opts.flexGrid - Enable flexbox grid
+ *
+ */
+
+export default (editor, opts) => {
   // Add the blocks to the editor
   const config = {
     blocks: [
