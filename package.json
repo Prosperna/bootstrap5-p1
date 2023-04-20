@@ -18,6 +18,9 @@
     "grapesjs plugin"
   ],
   "author": "Ruel Nopal",
+  "contributors": [
+    "Melvin Factoriza <chrismelvin.04@gmail.com>"
+  ],
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
