@@ -30,6 +30,18 @@
       "url": "https://github.com/chris-melvin"
     }
   ],
+  "contributors": [
+    {
+      "name": "Ruel Nopal",
+      "email": "ruel@prosperna.com",
+      "url": "https://github.com/rnopal"
+    },
+    {
+      "name": "Melvin Factoriza",
+      "email": "cfactoriza@prosperna.com",
+      "url": "https://github.com/chris-melvin"
+    }
+  ],
   "license": "ISC",
   "dependencies": {
     "bootstrap": "^5.1.3",
