@@ -1,18 +1,36 @@
-module.exports = (editor, opts = {}) => {
-  const blockId = "bootstrap5-p1";
+import blocks from "./src/blocks";
 
-  // Import Bootstrap 5.1.3 CSS and JS from CDN
-  editor.StyleManager.addComponents(`
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-  `);
+export default (editor, opts = {}) => {
+  // Add the blocks to the editor
+  const config = {
+    blocks: [
+      "section",
+      "column1",
+      "column2",
+      "column3",
+      "column4",
+      "column5",
+      "column6",
+      "column2-10",
+      "column3-9",
+      "column4-8",
+      "column5-7",
+      "column7-5",
+      "column8-4",
+      "column9-3",
+      "column10-2",
+      "column2-8-2",
+      "column8-2-2",
+      "column2-2-8",
+      "column3-6-3",
+      "column6-3-3",
+      "column3-3-6",
+    ],
+    flexGrid: false,
+    stylePrefix: "gjs-", // default is 'gjs-'
+    rowHeight: 300, // height of the cell
+    ...opts, // override default options
+  };
 
-  // Add custom block code here
-
-  // Add the custom block to the editor
-  editor.BlockManager.add(blockId, {
-    label: "Bootstrap5-P1 Block",
-    content: '<div class="my-custom-block">This is my custom block!</div>',
-    attributes: { class: "fa fa-square-o" },
-  });
+  blocks(editor, config);
 };
