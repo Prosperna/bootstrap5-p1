@@ -17,9 +17,17 @@
     "Bootstrap",
     "grapesjs plugin"
   ],
-  "author": "Ruel Nopal",
-  "contributors": [
-    "Melvin Factoriza <chrismelvin.04@gmail.com>"
+  "authors": [
+    {
+      "name": "Ruel Nopal",
+      "email": "ruel@prosperna.com",
+      "url": "https://github.com/rnopal"
+    },
+    {
+      "name": "Melvin Factoriza",
+      "email": "cfactoriza@prosperna.com",
+      "url": "https://github.com/chris-melvin"
+    }
   ],
   "license": "ISC",
   "dependencies": {
