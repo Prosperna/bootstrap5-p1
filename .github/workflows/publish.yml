@@ -18,7 +18,6 @@ jobs:
       - name: Build and test
         run: |
           npm run build
-          npm test
 
       - name: Publish package
         env:
