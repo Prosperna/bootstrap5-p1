@@ -1,6 +1,12 @@
 # Changelog
 
-## 1.0.8 - YYYY-MM-DD
+## 1.0.9 - 2023-04-24
+
+### Changed
+
+- Update BS5 component
+
+## 1.0.8 - 2023-04-20
 
 ### Changed
 
