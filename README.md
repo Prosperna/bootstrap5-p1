@@ -29,6 +29,12 @@ const editor = grapesjs.init({
 });
 ```
 
+In your css file, you can import the Bootstrap5-p1 CSS file to add the default styles for the blocks:
+
+```css
+@import "bootstrap5-p1/src/blocks/css/style.css";
+```
+
 Once the plugin is installed and added to your GrapesJS project, you can start using the custom blocks provided by the plugin.
 
 ## Components

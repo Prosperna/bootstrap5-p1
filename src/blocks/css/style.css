@@ -1,0 +1,24 @@
+.gjs-title {
+  background-color: rgba(56, 113, 224, 0.1) !important;
+  color: rgba(51, 51, 51, 1);
+}
+.gjs-block:hover {
+  background-color: rgba(56, 113, 224, 0.1) !important;
+}
+
+.gjs-block .custom-blocks {
+  fill: none;
+  width: 100%;
+  stroke: #5c5c5c;
+}
+
+.gjs-block:hover .custom-blocks {
+  fill: none;
+  stroke: #3871e0;
+}
+
+.gjs-block-label {
+  color: #5c5c5c;
+  font-size: 14px;
+  font-weight: 600;
+}
