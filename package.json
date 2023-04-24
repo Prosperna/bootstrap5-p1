@@ -6,6 +6,7 @@
     "type": "git",
     "url": "git+git@github.com:raketbizdev/bootstrap5-p1.git"
   },
+  "type": "module",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
