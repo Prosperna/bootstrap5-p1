@@ -1,4 +1,4 @@
-import block from "./block";
+import block from "./block.js";
 
 /**
  * Add the block to the editor

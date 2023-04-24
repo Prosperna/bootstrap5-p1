@@ -1,4 +1,4 @@
-import blocks from "./src/blocks";
+import blocks from "./src/blocks/index.js";
 
 /**
  * @param {Editor} editor
