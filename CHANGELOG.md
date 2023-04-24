@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.10 - 2023-04-24
+
+### Changed
+
+- Update Devdependency
+
 ## 1.0.9 - 2023-04-24
 
 ### Changed
