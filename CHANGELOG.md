@@ -5,6 +5,7 @@
 ## 1.0.13 - 2023-04-25
 
 - Updated: fix package.json
+- Added: adding .npmignore
 
 ## 1.0.12 - 2023-04-24
 
