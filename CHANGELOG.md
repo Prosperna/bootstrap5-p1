@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.0.12 - 2023-04-24
+
+- Added "type: module" to package.json
+
+# Changelog
+
 ## 1.0.10 - 2023-04-24
 
 ### Changed
