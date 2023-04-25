@@ -14,14 +14,13 @@ export default (opts = {}, blockProps) => {
     id: "Section",
     label: "Section",
     media: `<svg class="custom-blocks" width="93" height="55" viewBox="0 0 93 55" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="0.5" y="0.5" width="91.9522" height="54" stroke="#5C5C5C" stroke-dasharray="2 2"/>
+      <rect x="0.5" y="0.5" width="91.9522" height="54"  stroke-dasharray="2 2"/>
       </svg>
       `,
 
     content: `
-      <section ${attrsRow} class="gjs-section" id="container">
-      <div data-gjs-type="container" class="gjs-container">      
-      </div>
+      <section class="gjs-section" id="section">
+      <div data-gjs-type="container" class="gjs-container position-relative"><div class="layout-placeholder"></div></div>
     </section>
       ${`<style>
           ${styleRow}

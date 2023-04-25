@@ -21,10 +21,10 @@ export default (opts = {}, blockProps) => {
     <path d="M1 5C1 2.79086 2.79086 1 5 1H19V64H5C2.79086 64 1 62.2091 1 60V5Z" fill="#F42F1F"/>
     </svg>
               `,
-    content: `<div ${attrsRow} class="gjs-row" >
-    <div ${attrsCell} class="gjs-cell col-6 position-relative"><div class="layout-placeholder"></div></div>
-    <div ${attrsCell} class="gjs-cell col-3 position-relative"><div class="layout-placeholder"></div></div>
-    <div ${attrsCell} class="gjs-cell col-3 position-relative"><div class="layout-placeholder"></div></div>
+    content: `<div ${attrsRow} class="gjs-row row" >
+    <div ${attrsCell} class="gjs-cell col-sm col-md-6 col-lg-6 position-relative"><div class="layout-placeholder"></div></div>
+    <div ${attrsCell} class="gjs-cell col-sm col-md-3 col-lg-3 position-relative"><div class="layout-placeholder"></div></div>
+    <div ${attrsCell} class="gjs-cell col-sm col-md-3 col-lg-3 position-relative"><div class="layout-placeholder"></div></div>
   </div>
               ${`<style>
                   ${styleRow}

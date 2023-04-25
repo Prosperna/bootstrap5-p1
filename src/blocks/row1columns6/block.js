@@ -24,13 +24,13 @@ export default (opts = {}, blockProps) => {
       <rect x="97.2119" y="6" width="12.6667" height="53" rx="3"   stroke-width="2"/>
       </svg>
       `,
-    content: `<div ${attrsRow} class="gjs-row" >
-      <div ${attrsCell} class="gjs-cell col position-relative"><div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col  position-relative"> <div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col position-relative"><div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col  position-relative"> <div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col position-relative"><div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col  position-relative"> <div class="layout-placeholder"></div></div>
+    content: `<div ${attrsRow} class="gjs-row row" >
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"><div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"> <div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"><div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"> <div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"><div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"> <div class="layout-placeholder"></div></div>
     </div>
       ${`<style>
           ${styleRow}
