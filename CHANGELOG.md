@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.14 - 2023-04-26
+
+- Updated: package.json peerDependencies
+- Updated: columns to have responsive breakpoints
+
 ### Updated
 
 ## 1.0.13 - 2023-04-25
