@@ -86,7 +86,7 @@ export default (editor, opts) => {
     <circle cx="25" cy="25" r="25" fill="#3871E0"/>
     <path d="M23.875 35.5V26.125H14.5V23.875H23.875V14.5H26.125V23.875H35.5V26.125H26.125V35.5H23.875Z" fill="white"/>
     </svg>
-        <p class="fw-bold text-grey text-center">Drag a block here</p>
+        <p class="fw-bold text-black-50 text-center">Drag a block here</p>
       </div>`,
         styles: `.layout-placeholder {
         display: none;

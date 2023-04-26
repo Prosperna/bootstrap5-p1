@@ -19,7 +19,7 @@ export default (opts = {}, blockProps) => {
       `,
 
     content: `
-      <section class="gjs-section" id="section">
+      <section data-gjs-droppable="container" class="gjs-section" id="section">
       <div data-gjs-type="container" class="gjs-container position-relative"><div class="layout-placeholder"></div></div>
     </section>
       ${`<style>
