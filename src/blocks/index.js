@@ -128,6 +128,7 @@ export default (editor, opts) => {
   const rowAttr = {
     "data-gjs-droppable": `.${clsCell}`,
     "data-gjs-name": "Row",
+    "data-gjs-resizable": resizerBtm,
   };
 
   // Column Attributes
