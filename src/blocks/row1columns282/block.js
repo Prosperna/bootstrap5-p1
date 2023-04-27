@@ -13,7 +13,7 @@ export default (opts = {}, blockProps) => {
     category: category,
     select: select,
     id: "1row ",
-    label: "1 Row 2/8/2 Columns",
+    label: "<span>1 Row <br/> 3 Columns 2/8/2</span>",
     media: `<svg class="custom-blocks" width="114" height="66" viewBox="0 0 114 66" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M0 5C0 2.79086 1.79086 1 4 1H9V64H4C1.79086 64 0 62.2091 0 60V5Z" fill="#FF007A"/>
     <rect x="-1" y="1" width="15.6" height="64" rx="3" transform="matrix(-1 0 0 1 111.647 0)"   stroke-width="2"/>

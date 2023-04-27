@@ -13,7 +13,7 @@ export default (opts = {}, blockProps) => {
     category: category,
     select: select,
     id: "1row ",
-    label: "1 Row 8/4 Columns",
+    label: "<span>1 Row <br/> 2 Columns 8/4</span>",
     media: `<svg class="custom-blocks" width="113" height="66" viewBox="0 0 113 66" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 5C1 2.79086 2.79086 1 5 1H19V64H5C2.79086 64 1 62.2091 1 60V5Z" fill="#2DA94F"/>
     <rect x="-1" y="1" width="34.2353" height="64" rx="3" transform="matrix(-1 0 0 1 110.647 0)"   stroke-width="2"/>
@@ -21,8 +21,8 @@ export default (opts = {}, blockProps) => {
     </svg>
           `,
     content: `<div ${attrsRow} class="gjs-row row" >
-    <div ${attrsCell} class="gjs-cell col-sm col-md-8 col-lg-4 position-relative"><div class="layout-placeholder"></div></div>
-    <div ${attrsCell} class="gjs-cell col-sm col-md-8 col-lg-4 position-relative"><div class="layout-placeholder"></div></div>
+    <div ${attrsCell} class="gjs-cell col-sm col-md-8 col-lg-8 position-relative"><div class="layout-placeholder"></div></div>
+    <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg-4 position-relative"><div class="layout-placeholder"></div></div>
   </div>
           ${`<style>
               ${styleRow}
