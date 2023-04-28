@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.0.15 - 2023-04-27
+
+- Updated: name of blocks
+- minor fixes
+
 ## 1.0.14 - 2023-04-26
 
 - Updated: package.json peerDependencies
