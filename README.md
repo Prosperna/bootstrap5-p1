@@ -26,6 +26,11 @@ const editor = grapesjs.init({
       // ...your plugin options
     },
   },
+  canvas: {
+    styles: [
+      "https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css", // bootstrap styles
+    ],
+  },
 });
 ```
 
@@ -39,15 +44,29 @@ Once the plugin is installed and added to your GrapesJS project, you can start u
 
 ## Components
 
-| Block      | Description                                                                                                                       |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------- |
-| Row        | Creates a Bootstrap row that can contain one or more Column blocks. The row can be customized with additional classes and styles. |
-| Column1-p1 | Creates a single-column layout that can be customized with additional classes and styles. The column content is a Markdown table. |
-| Column2-p1 | Creates a two-column layout with equal width that can be customized with additional classes and styles.                           |
-| Column3-p1 | Creates a three-column layout with equal width that can be customized with additional classes and styles.                         |
-| Column4-p1 | Creates a four-column layout with equal width that can be customized with additional classes and styles.                          |
-| Column5-p1 | Creates a five-column layout with equal width that can be customized with additional classes and styles.                          |
-| Column6-p1 | Creates a six-column layout with equal width that can be customized with additional classes and styles.                           |
+| Block       | Description                                                                                                                                          |
+| ----------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Section     | A container that can have the bootstrap class container or container fluid                                                                           |
+| column1     | A bootstrap row with one column                                                                                                                      |
+| column2     | A bootstrap row with two columns                                                                                                                     |
+| column3     | A bootstrap row with three columns                                                                                                                   |
+| column4     | A bootstrap row with four columns                                                                                                                    |
+| column5     | A bootstrap row with five columns                                                                                                                    |
+| column6     | A bootstrap row with six columns                                                                                                                     |
+| column2-10  | A bootstrap row with two columns, the first column is 2/12 and the second column is 10/12 from the bootstrap grid system                             |
+| column3-9   | A bootstrap row with two columns, the first column is 3/12 and the second column is 9/12 from the bootstrap grid system                              |
+| column4-8   | A bootstrap row with two columns, the first column is 4/12 and the second column is 8/12 from the bootstrap grid system                              |
+| column5-7   | A bootstrap row with two columns, the first column is 5/12 and the second column is 7/12 from the bootstrap grid system                              |
+| column7-5   | A bootstrap row with two columns, the first column is 7/12 and the second column is 5/12 from the bootstrap grid system                              |
+| column8-4   | A bootstrap row with two columns, the first column is 8/12 and the second column is 4/12 from the bootstrap grid system                              |
+| column9-3   | A bootstrap row with two columns, the first column is 9/12 and the second column is 3/12 from the bootstrap grid system                              |
+| column10-2  | A bootstrap row with two columns, the first column is 10/12 and the second column is 2/12 from the bootstrap grid system                             |
+| column2-8-2 | A bootstrap row with three columns, the first column is 2/12, the second column is 8/12, and the third column is 2/12 from the bootstrap grid system |
+| column8-2-2 | A bootstrap row with three columns, the first column is 8/12, the second column is 2/12, and the third column is 2/12 from the bootstrap grid system |
+| column2-2-8 | A bootstrap row with three columns, the first column is 2/12, the second column is 2/12, and the third column is 8/12 from the bootstrap grid system |
+| column3-6-3 | A bootstrap row with three columns, the first column is 3/12, the second column is 6/12, and the third column is 3/12 from the bootstrap grid system |
+| column6-3-3 | A bootstrap row with three columns, the first column is 6/12, the second column is 3/12, and the third column is 3/12 from the bootstrap grid system |
+| column3-3-6 | A bootstrap row with three columns, the first column is 3/12, the second column is 3/12, and the third column is 6/12 from the bootstrap grid system |
 
 ## Customization
 
