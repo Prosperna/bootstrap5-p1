@@ -21,8 +21,8 @@ export default (opts = {}, blockProps) => {
       </svg>
       `,
     content: `<div ${attrsRow} class="gjs-row row" >
-      <div ${attrsCell} class="gjs-cell col-sm position-relative"><div class="layout-placeholder"></div></div>
-      <div ${attrsCell} class="gjs-cell col-sm position-relative"> <div class="layout-placeholder"></div></div>
+      <div ${attrsCell} class="gjs-cell col-sm position-relative"></div>
+      <div ${attrsCell} class="gjs-cell col-sm position-relative"></div>
     </div>
       ${`<style>
           ${styleRow}

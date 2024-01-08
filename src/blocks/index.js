@@ -40,8 +40,32 @@ export default (editor, opts) => {
   const styleClm = `
     .${clsCell} {
       min-height: ${rowHeight}px;
-    }`;
-
+    }
+    
+    .gjs-section:empty:before,
+    .gjs-container:empty:before,
+    .gjs-row:empty:before,
+    .gjs-cell:empty:before {
+      background-color: #ddd;
+      color: #000;
+      font-size: 20px;
+      font-weight: bold;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      opacity: 0.3;
+      border-radius: 3px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-align: center;
+      text-overflow: ellipsis;
+      content: "+ \\A Drag a block here";
+      white-space: pre;
+    }
+    `;
   const step = 0.2;
   const minDim = 1;
   const currentUnit = 1;
@@ -71,42 +95,32 @@ export default (editor, opts) => {
   }
 
   // Component declaration for block placeholders
-  editor.DomComponents.addType("layout-placeholder", {
-    isComponent: (el) =>
-      el.classList && el.classList.contains("layout-placeholder"),
-    model: {
-      defaults: {
-        tagName: "div",
-        draggable: false,
-        droppable: false,
-        stylable: false,
-        highlightable: false,
-        components: `<div class="layout-placeholder-container">
-        <svg class="d-block mx-auto" width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="25" cy="25" r="25" fill="#3871E0"/>
-    <path d="M23.875 35.5V26.125H14.5V23.875H23.875V14.5H26.125V23.875H35.5V26.125H26.125V35.5H23.875Z" fill="white"/>
-    </svg>
-        <p class="fw-bold text-black-50 text-center">Drag a block here</p>
-      </div>`,
-        styles: `.layout-placeholder {
-        display: none;
-        pointer-events: none;
-        position: absolute;
-        width: fit-content;
-      }
-      .layout-placeholder:only-child {
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        display: block;
-      }
-      .layout-placeholder-preview {
-        display: none;
-      }
-      `,
-      },
-    },
-  });
+  // editor.DomComponents.addType("layout-placeholder", {
+  //   isComponent: (el) => el.classList && el.classList.contains("gjs-cell"),
+  //   model: {
+  //     defaults: {
+  //       styles: `.layout-placeholder:empty:before {
+  //           background-color: #ddd;
+  //           color: #000;
+  //           font-size: 16px;
+  //           font-weight: bold;
+  //           height: 100%;
+  //           display: flex;
+  //           align-items: center;
+  //           justify-content: center;
+  //           min-height: 50px;
+  //           padding: 0 10px;
+  //           opacity: 0.3;
+  //           border-radius: 3px;
+  //           white-space: nowrap;
+  //           overflow: hidden;
+  //           text-overflow: ellipsis;
+  //           content: "Drag a block here";
+  //         }
+  //     `,
+  //     },
+  //   },
+  // });
 
   editor.on("run:preview", () => {
     editor.DomComponents.getWrapper().onAll(
@@ -134,7 +148,7 @@ export default (editor, opts) => {
   // Column Attributes
   const colAttr = {
     "data-gjs-draggable": `.${clsRow}`,
-    "data-gjs-name": "Cell",
+    "data-gjs-name": "Column",
   };
 
   if (flexGrid) {

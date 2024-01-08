@@ -36,7 +36,7 @@ export default (editor, opts) => {
     ],
     flexGrid: false,
     stylePrefix: "gjs-", // default is 'gjs-'
-    rowHeight: 300, // height of the cell
+    // rowHeight: 50, // height of the cell
     ...opts, // override default options
   };
 
