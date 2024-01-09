@@ -88,12 +88,13 @@ export default (editor, opts) => {
     step,
   };
 
+  //
   // Flex elements do not react on width style change therefore I use
   // 'flex-basis' as keyWidth for the resizer on columns
   if (flexGrid) {
     resizerRight.keyWidth = "flex-basis";
   }
-  //
+
   // Component declaration for block placeholders
   // editor.DomComponents.addType("layout-placeholder", {
   //   isComponent: (el) => el.classList && el.classList.contains("gjs-cell"),
