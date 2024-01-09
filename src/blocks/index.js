@@ -93,7 +93,7 @@ export default (editor, opts) => {
   if (flexGrid) {
     resizerRight.keyWidth = "flex-basis";
   }
-
+  //
   // Component declaration for block placeholders
   // editor.DomComponents.addType("layout-placeholder", {
   //   isComponent: (el) => el.classList && el.classList.contains("gjs-cell"),
