@@ -6,8 +6,15 @@
  */
 export default (opts = {}, blockProps) => {
   const { ...defaultOpts } = opts;
-  const { attrsRow, attrsCell, styleRow, styleClm, category, select } =
-    blockProps;
+  const {
+    attrsRow,
+    attrsCell,
+    styleRow,
+    styleClm,
+    styleCustom,
+    category,
+    select,
+  } = blockProps;
 
   const block = {
     category: category,
@@ -21,12 +28,13 @@ export default (opts = {}, blockProps) => {
       </svg>
       `,
     content: `<div ${attrsRow} class="gjs-row row" >
-      <div ${attrsCell} class="gjs-cell col-sm position-relative"></div>
-      <div ${attrsCell} class="gjs-cell col-sm position-relative"></div>
+      <div ${attrsCell} class="gjs-cell col-sm position-relative bs-row"></div>
+      <div ${attrsCell} class="gjs-cell col-sm position-relative bs-column"></div>
     </div>
       ${`<style>
           ${styleRow}
           ${styleClm}
+          ${styleCustom}
         </style>`}
       `,
   };
