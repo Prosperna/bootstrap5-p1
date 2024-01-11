@@ -19,17 +19,16 @@ export default (opts = {}, blockProps) => {
       `,
 
     content: `
-    <section data-gjs-droppable="true" data-gjs-resizable="true"  data-gjs-name="Section" class="gjs-section position-relative " id="section" >
-    <div class="container" id="container" data-gjs-resizable="false" data-gjs-draggable="false" style="height: 100%;" data-gjs-name="Container">
-      <div class="layout-placeholder"></div>
-    </div>
+    <section data-gjs-droppable="true" data-gjs-resizable="true" data-gjs-name="Section" class="gjs-section position-relative " id="section" >
+    <div class="gjs-container container" id="container" data-gjs-resizable="false" data-gjs-draggable="false" data-gjs-name="Container"></div>
     </section>
       ${`<style>
           ${styleRow}
           ${styleClm}
-          #container {
-            min-height: 300px;
-          } 
+          #section {
+            padding-top: 50px;
+            padding-bottom: 50px;
+          }
          </style>`}
       `,
   };
