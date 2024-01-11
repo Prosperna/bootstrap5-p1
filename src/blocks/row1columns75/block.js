@@ -27,9 +27,9 @@ export default (opts = {}, blockProps) => {
     <rect x="-1" y="1" width="62.1882" height="64" rx="3" transform="matrix(-1 0 0 1 63.0234 0)"   stroke-width="2"/>
     </svg>
           `,
-    content: `<div ${attrsRow} class="gjs-row row" >
-    <div ${attrsCell} class="gjs-cell col-sm col-md-7 col-lg-7 position-relative"></div>
-    <div ${attrsCell} class="gjs-cell col-sm col-md-5 col-lg-5 position-relative"></div>
+    content: `<div ${attrsRow} class="gjs-row row bs-row" >
+    <div ${attrsCell} class="gjs-cell col-sm col-md-7 col-lg-7 position-relative bs-column"></div>
+    <div ${attrsCell} class="gjs-cell col-sm col-md-5 col-lg-5 position-relative bs-column"></div>
   </div>
           ${`<style>
               ${styleRow}
