@@ -35,13 +35,13 @@ export default (editor, opts) => {
       .${clsRow} {
         height: 100%;
       }
-    }`;
-
-  const styleClm = `
-    .${clsCell} {
-      min-height: ${rowHeight}px;
     }
-    
+    .bs-row {
+      min-height: unset;
+    }
+  `;
+
+  const styleCustom = `
     .gjs-section:empty:before,
     .gjs-container:empty:before,
     .gjs-row:empty:before,
@@ -65,7 +65,13 @@ export default (editor, opts) => {
       content: "+ \\A Drag a block here";
       white-space: pre;
     }
-    `;
+  `;
+
+  const styleClm = `
+    .bs-column {
+      min-height: unset;
+    }
+  `;
   const step = 0.2;
   const minDim = 1;
   const currentUnit = 1;
@@ -190,6 +196,7 @@ export default (editor, opts) => {
     attrsRow,
     styleRow,
     styleClm,
+    styleCustom,
     category: "Layout",
     select: true,
   };

@@ -5,8 +5,15 @@
  * @return {Object} - Block object
  */
 export default (opts = {}, blockProps) => {
-  const { attrsRow, attrsCell, styleRow, styleClm, category, select } =
-    blockProps;
+  const {
+    attrsRow,
+    attrsCell,
+    styleRow,
+    styleClm,
+    styleCustom,
+    category,
+    select,
+  } = blockProps;
 
   const block = {
     category: category,
@@ -25,6 +32,7 @@ export default (opts = {}, blockProps) => {
       ${`<style>
           ${styleRow}
           ${styleClm}
+          ${styleCustom}
           #section {
             padding-top: 50px;
             padding-bottom: 50px;
