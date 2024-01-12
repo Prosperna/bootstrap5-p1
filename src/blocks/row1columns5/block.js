@@ -30,12 +30,12 @@ export default (opts = {}, blockProps) => {
       <rect x="93.5879" y="6" width="15.6863" height="53" rx="3"   stroke-width="2"/>
       </svg>
       `,
-    content: `<div ${attrsRow} class="gjs-row row" >
-      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"></div>
-      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"></div>
-      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative"></div>
-      <div ${attrsCell} class="gjs-cell col-sm col-md-6 col-lg position-relative"></div>
-      <div ${attrsCell} class="gjs-cell col-sm col-md-6 col-lg position-relative"></div>
+    content: `<div ${attrsRow} class="gjs-row row bs-row" >
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative bs-column"></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative bs-column"></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-4 col-lg position-relative bs-column"></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-6 col-lg position-relative bs-column"></div>
+      <div ${attrsCell} class="gjs-cell col-sm col-md-6 col-lg position-relative bs-column"></div>
 
     </div>
       ${`<style>
