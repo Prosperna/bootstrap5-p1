@@ -31,11 +31,6 @@ export default (editor, opts) => {
       margin: 0 !important;
       padding: 10px;
     }
-    @media (max-width: 768px) {
-      .${clsRow} {
-        height: 100%;
-      }
-    }
     .bs-row {
       min-height: unset;
     }
